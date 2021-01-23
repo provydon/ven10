@@ -13,15 +13,15 @@
                 [@foreach ($selected_filter->colors as $item) {{$item}}, @endforeach]
             </p>
             <p class="font-bold">
-                found {{$car_owners->total()}} Car Owners for this filter
+                found {{number_format($car_owners->total())}} Car Owners for this filter
             </p>
         </div>
         <div class="col-md-6">
-            Showing {{$car_owners->count()}} results out of {{$car_owners->total()}} Car Owners for this filter
+            Showing {{number_format($car_owners->count())}} results out of {{number_format($car_owners->total())}} Car Owners for this filter
         </div>
     @else
         <div class="col-md-12">
-            Showing {{$car_owners->count()}} results out of {{$car_owners->total()}} Car Owners
+            Showing {{number_format($car_owners->count())}} results out of {{number_format($car_owners->total())}} Car Owners
         </div>
     @endif
 </div>
