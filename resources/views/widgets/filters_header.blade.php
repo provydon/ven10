@@ -12,6 +12,9 @@
                 <span>Colors:</span>
                 [@foreach ($selected_filter->colors as $item) {{$item}}, @endforeach]
             </p>
+            <p>
+                found {{$car_owners->total()}} Car Owners for this filter
+            </p>
         </div>
         <div class="col-md-6">
             Showing {{$car_owners->count()}} results out of {{$car_owners->total()}} Car Owners for this filter
