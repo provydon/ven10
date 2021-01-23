@@ -1,0 +1,72 @@
+/* Hind Vadodara */
+@font-face {
+    font-family: "Hind Vadodara Regular";
+    src: url("../fonts/Hind_Vadodara/HindVadodara-Regular.ttf");
+}
+@font-face {
+    font-family: "Hind Vadodara Medium";
+    src: url("../fonts/Hind_Vadodara/HindVadodara-Medium.ttf");
+}
+@font-face {
+    font-family: "Hind Vadodara SemiBold";
+    src: url("../fonts/Hind_Vadodara/HindVadodara-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Hind Vadodara Bold";
+    src: url("../fonts/Hind_Vadodara/HindVadodara-Bold.ttf");
+}
+
+/* Muli */
+@font-face {
+    font-family: "Muli ExtraBold";
+    src: url("../fonts/Muli/Muli-ExtraBold.ttf");
+}
+
+/* Gudea */
+@font-face {
+    font-family: "Gudea Regular";
+    src: url("../fonts/Gudea/Gudea-Regular.ttf");
+}
+@font-face {
+    font-family: "Gudea Bold";
+    src: url("../fonts/Gudea/Gudea-Bold.ttf");
+}
+
+h1 {
+    font-size: 65px;
+}
+h2 {
+    font-size: 35px;
+}
+h3 {
+    font-size: 26px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+main>div{
+    min-height: 50vh;
+}
+
+
+.display-none{
+    display: none;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+}
