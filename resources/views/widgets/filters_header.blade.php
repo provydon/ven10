@@ -12,7 +12,7 @@
                 <span>Colors:</span>
                 [@foreach ($selected_filter->colors as $item) {{$item}}, @endforeach]
             </p>
-            <p>
+            <p class="font-bold">
                 found {{$car_owners->total()}} Car Owners for this filter
             </p>
         </div>
