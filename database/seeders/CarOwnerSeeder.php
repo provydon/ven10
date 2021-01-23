@@ -17,7 +17,7 @@ class CarOwnerSeeder extends Seeder
     {
         try {
             // Get Car Owners from Google Sheets
-          $values = GoogleSheets::getSheet("2:500","1F3yFsy7kxDR5KwTkYaI84NmfhpmrQqrKBZd3J8fmiw8");
+          $values = GoogleSheets::getSheet("2:65500","1F3yFsy7kxDR5KwTkYaI84NmfhpmrQqrKBZd3J8fmiw8");
         } catch (\Throwable $th) {
             throw $th;
         }
