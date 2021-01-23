@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Index Page
+Route::get('/', 'PageController@getIndex')->name('index');
+
+// filter
+Route::get('/filters/{filter_id}', 'PageController@getFilterPage')->name('filter');
+
+
+// Google Sheets Callback
+Route::get('/google-sheets-callback', 'SocialAuthController@googleSheetsCallback')->name('google-sheets-callback');
+

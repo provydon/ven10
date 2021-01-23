@@ -1,0 +1,193 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+body {
+    font-family: "Gudea Regular";
+    font-size: 14px;
+}
+
+.paginate-links {
+    text-align: center;
+    font-size: 16px;
+}
+
+.paginate-links nav {
+    overflow-x: auto;
+}
+
+.paginate-links .pagination {
+    justify-content: center;
+}
+
+.navbar {
+    background: #171717;
+    background-color: #171717;
+    padding: 34px 60px;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.gallery h2 {
+    font-family: "Muli ExtraBold";
+    color: rgba(52, 49, 49, 1);
+    margin-bottom: 18px;
+}
+
+#gallery {
+    padding: 70px 0;
+    background: #ffffff;
+}
+
+#gallery-intro {
+    margin: 0;
+    padding: 15px;
+}
+
+#gallery-intro h2 {
+    color: #343131;
+    font-family: "Muli ExtraBold";
+}
+
+#gallery-intro p {
+    color: #040404;
+    font-size: 16px;
+}
+
+.gallery-nav .list-group {
+    background: #f9f9f9;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.gallery-nav-header {
+    background: #212020 !important;
+    border: solid #707070 1px !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 16px;
+    font-family: "Gudea Bold";
+    color: #ffffff !important;
+    padding: 0 34px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.gallery-nav .list-group-item {
+    background-color: rgb(249, 249, 249);
+    border-bottom: sollid rgb(0, 0, 0, 0.5) 1px;
+    color: #656565;
+    padding: 18px 14px;
+    padding-top: 11px;
+    font-family: "Hind Vadodara Medium";
+}
+
+.gallery-nav .list-group-item:hover {
+    background-color: #fff;
+}
+
+.gallery-nav .list-group-item.active {
+    background-color: #ed2807;
+    color: #ffffff;
+    border: none;
+}
+
+.gallery-nav .list-group-item.active:hover {
+    background-color: #ed2807;
+}
+
+.gallery-nav .list-group-item p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.gallery-nav .list-group-item p span {
+    color: rgb(97, 94, 94);
+}
+
+.gallery-nav .list-group-item.active p span {
+    color: rgb(255, 250, 250);
+}
+
+#galleryNav {
+    margin-bottom: 100px;
+}
+
+#galleryNav .page-link {
+    background-color: #f9f9f9;
+    border: none;
+    color: #656565;
+    font-family: "Hind Vadodara Medium";
+}
+
+#galleryNav .page-item.active .page-link {
+    background-color: #ed2807;
+    border: none;
+    color: #ffffff;
+}
+
+#galleryNav .page-item.disabled .page-link {
+    opacity: 0.5;
+}
+
+#galleryNav .dropdown-toggle {
+    min-width: 10rem;
+}
+
+#galleryNav .dropdown-toggle {
+    background-color: #f9f9f9;
+    border: none;
+    color: #656565;
+    font-family: "Hind Vadodara Medium";
+    font-size: 16px;
+}
+
+.list-group-scroll {
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.filter-subtitle {
+    font-size: 13px;
+    color: rgb(216, 210, 210);
+    margin: 2px 0;
+}
+
+.filter-div p,
+.filter-div h5 {
+    margin: 1px;
+}
+
+.filter-div {
+    margin: 15px 0;
+}
+
+.filter-dropdown-menu .dropdown-item {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+@media (max-width: 768px) {
+    #gallery {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 650px) {
+    #gallery-intro {
+        background: #ffffff;
+    }
+    .navbar {
+        padding: 34px 15px;
+    }
+}
