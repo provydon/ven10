@@ -17,6 +17,9 @@ $ composer dump-autoload
 # migrate and seed
 $ php artisan migrate --seed
 
+# setup storage folder to keep tokens
+$ php artisan storage:link
+
 # start server
 $ php artisan serve
 

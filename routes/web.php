@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Google Sheets Callback
+Route::get('/google-sheets-callback', 'SocialAuthController@googleSheetsCallback')->name('google-sheets-callback');
+
