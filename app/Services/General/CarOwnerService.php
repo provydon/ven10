@@ -30,21 +30,11 @@ class CarOwnerService
         }
 
         if ($filter) {
-            $query = new CarOwner;
-            $query = $query->whereBetween('car_model_year', [$filter->start_year, $filter->end_year]);
-            $query = $query->where('gender', $filter->gender);
-
-            foreach ($filter->countries as $key => $country) {
-                $query = $query->where('country', 'like', '%' . $country . '%');
-            }
-
-            foreach ($filter->colors as $key => $color) {
-                $query = $query->where('car_color', 'like', '%' . $color . '%');
-            }
-
-            $query = $query->paginate(20);
-
-            $filtered_car_owners = $query;
+            $filtered_car_owners = CarOwner::whereBetween('car_model_year', [$filter->start_year, $filter->end_year])
+                ->where('gender', $filter->gender)
+                ->whereIn('country', $filter->countries)
+                ->whereIn('car_color', $filter->colors)
+                ->paginate(20);
         } else {
             abort(404, "Selected Filter does not or no longer exists in Ven10 Assessment Filter Api");
         }
