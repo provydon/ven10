@@ -32,14 +32,14 @@ class CarOwnerService
         if ($filter) {
             $query = new CarOwner;
             $query = $query->whereBetween('car_model_year', [$filter->start_year, $filter->end_year]);
-            $query = $query->orWhere('gender', $filter->gender);
+            $query = $query->where('gender', $filter->gender);
 
             foreach ($filter->countries as $key => $country) {
-                $query = $query->orWhere('country', 'like', '%' . $country . '%');
+                $query = $query->where('country', 'like', '%' . $country . '%');
             }
 
             foreach ($filter->colors as $key => $color) {
-                $query = $query->orWhere('car_color', 'like', '%' . $color . '%');
+                $query = $query->where('car_color', 'like', '%' . $color . '%');
             }
 
             $query = $query->paginate(20);
