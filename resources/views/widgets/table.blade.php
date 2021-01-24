@@ -17,7 +17,7 @@
               </tr>
             </thead>
             <tbody class="list-group-scroll">
-                @foreach ($car_owners as $owner)
+                @forelse($car_owners as $owner)
                     <tr>
                         <th scope="row">{{$owner->id}}</th>
                         <td>{{$owner->first_name}}</td>
@@ -30,7 +30,11 @@
                         <td>{{$owner->job_title}}</td>
                         <td>{{$owner->bio}}</td>
                     </tr>
-                @endforeach
+                @empty
+                    <tr>
+                        <td colspan="10">No Results found for this filter</td>
+                    </tr>
+                @endforelse
             </tbody>
         </table>
     </div>
